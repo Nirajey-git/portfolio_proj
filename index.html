@@ -3,239 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Niraj Gajurel - A Curious Mind</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Niraj Gajurel - Software Engineer</title>
     <link rel="icon" type="image/x-icon" href="/images/Hii.jpg">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #d3d3d3;
-            color: #333;
-        }
-
-        header {
-            background-color: rgb(137, 189, 250);
-            color: #fff;
-            padding: 20px 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        nav {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            gap: 15px;
-        }
-
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        nav ul li a:hover {
-            text-decoration: underline;
-        }
-
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-        }
-
-        .hamburger div {
-            width: 25px;
-            height: 3px;
-            background-color: #fff;
-            margin: 3px 0;
-        }
-
-        @media (max-width: 768px) {
-            .hamburger {
-                display: flex;
-                position: absolute;
-                right: 20px;
-            }
-
-            nav ul {
-                display: none;
-                flex-direction: column;
-                background-color: #4a90e2;
-                position: absolute;
-                top: 50px;
-                left: 50%;
-                transform: translateX(-50%);
-                padding: 10px;
-                border-radius: 8px;
-            }
-
-            nav ul.show {
-                display: flex;
-            }
-
-            nav ul li {
-                margin: 10px 0;
-            }
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        .home {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            background-color: #eef3f9;
-            padding: 50px 20px;
-        }
-
-        .home .description {
-            flex: 1;
-            max-width: 500px;
-            margin: 20px;
-        }
-
-        .home .description h2 {
-            font-size: 2rem;
-            margin-bottom: 10px;
-        }
-
-        .home .description p {
-            margin-top: 10px;
-            font-size: 1.2rem;
-            color: #555;
-        }
-
-        .home .image {
-            flex: 1;
-            max-width: 500px;
-            margin: 20px;
-        }
-
-        .home img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        @media (max-width: 768px) {
-            .home {
-                flex-direction: column;
-                padding: 30px 20px;
-            }
-        }
-
-        .blogs {
-            background-color: #dbe7f2;
-            padding: 50px 20px;
-        }
-
-        .blogs .blog {
-            background-color: #fff;
-            margin: 20px auto;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left;
-            max-width: 600px;
-        }
-
-        .blogs .blog h3 {
-            margin-bottom: 10px;
-        }
-
-        .blogs .blog a {
-            color: #4a90e2;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .blogs .blog a:hover {
-            text-decoration: underline;
-        }
-
-        .contact {
-            background-color: #eef3f9;
-            padding: 50px 20px;
-            text-align: center;
-        }
-
-        .contact-form {
-            max-width: 400px;
-            margin: 20px auto;
-        }
-
-        .contact-form form {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .contact-form input, .contact-form textarea, .contact-form button {
-            margin: 10px 0;
-            padding: 10px;
-            font-size: 1rem;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .contact-form button {
-            background-color: #4a90e2;
-            color: #fff;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background-color: #357ab8;
-        }
-
-        .social-icons {
-            margin-top: 20px;
-        }
-
-        .social-icons a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #4a90e2;
-            font-size: 1.5rem;
-        }
-
-        footer {
-            background-color:rgb(137, 189, 250);
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
         <div class="hamburger" onclick="toggleMenu()">
+        <div></div>
+            <div ></div>
             <div></div>
-            <div></div>
-            <div></div>
-        </div>
+        </div> 
         <nav>
-            <ul id="nav-links">
+            <h2 class="logo"> Niraj Gajurel</h3>
+            <ul id="nav-links" >
                 <li><a href="#home">Home</a></li>
                 <li><a href="#blogs">Blogs</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -246,8 +27,8 @@
     <section id="home" class="home">
         <div class="description">
             <h4>Hi, I'm Niraj Gajurel</h4>
-            <h2> <mark>Data Analyst</mark></h2>
-            <p>I am a data analyst currently pursuing a Master's in Information Technology at King's Own Institute, living in Sydney, Australia. I have experience with MySQL, Python, Excel, and Power BI, and I am passionate about utilizing data to drive insights and solutions.</p>
+            <h2> Software Engineer </h2>
+            <p> Hi, I’m a Software Engineer based in Sydney, Australia, studying a Master of Information Technology. I specialize in full-stack development, creating applications that work smoothly from front-end to back-end. I love building practical, user-friendly solutions that solve real-world problems.</p>
         </div>
         <div class="image">
             <img src="images/imgg.jpg" alt="My Portfolio Image">
