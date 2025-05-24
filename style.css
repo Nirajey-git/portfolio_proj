@@ -31,7 +31,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
-    padding-left: 1850px;
+    padding-left: 1800px;
     gap: 15px;
 }
 
@@ -41,7 +41,7 @@ nav ul li a {
     justify-content: space-between;
     font-size: 17px;
     font-weight: bold;
-    padding: 10px;
+    padding: 9px;
 }
 
 nav ul li a:hover {
@@ -143,11 +143,64 @@ section {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+
 @media (max-width: 768px) {
     .home {
         flex-direction: column;
         padding: 30px 20px;
     }
+}
+
+.myskills{
+    background-color: #ddd;
+  
+   
+}
+
+.meroskills{
+    justify-content: center;
+}
+
+.meroskills h2{
+    text-align: center;
+   font-size: 23px;;
+   
+}
+
+.wrapper {
+    display: flex;
+    max-height: 125px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-left: 5px;
+    background-color: #ddd;
+
+}
+.wrapper::-webkit-scrollbar {
+    width: 10;
+}
+
+
+.wrapper .item{
+    display: flex;
+    justify-items: center;
+    height: 200px;
+    width: 150px;
+    
+   
+   
+    
+}
+
+.wrapper .item img{
+    width: 120px;
+    height: 110px;
+    margin: 15px;
+    padding: 14px;
+    ;
+    /* border: 2px solid #333; */
+    box-shadow: #333 0px, 0px, 15px;
+
 }
 
 .blogs {
@@ -200,7 +253,7 @@ section {
     padding: 10px;
     font-size: 1rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 .contact-form button {
@@ -225,10 +278,15 @@ section {
     font-size: 1.5rem;
 }
 
+.social-icons img{
+    width: 30px;
+    height: 30px;
+}
+
 footer {
     background-color:rgb(137, 189, 250);
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    margin-top: 20px;
+    margin-top: 0px;
 }
