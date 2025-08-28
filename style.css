@@ -15,17 +15,20 @@ header {
     background-color: rgb(137, 189, 250);
     color: #fff;
     padding: 20px;
+    
 }
 
 nav {
    text-align: center;
     transform: translateX(-50%);
+    
 }
 
 .logo{
     margin:0px;
     height: 10px;
     padding-left: 200px;
+    cursor: pointer;
 }
 
 nav ul {
